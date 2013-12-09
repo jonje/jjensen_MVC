@@ -13,13 +13,17 @@ public class Main {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                GameFrame frame = new GameFrame();
+                SetupFrameServer frame = new SetupFrameServer();
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 frame.setSize(200, 200);
 
-                frame.setLocationRelativeTo(null);
                 //frame.pack();
                 frame.setVisible(true);
+
+                GamePlayFrame frame2 = new GamePlayFrame();
+                frame2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                frame2.setSize(200, 200);
+                frame2.setVisible(true);
             }
         });
 

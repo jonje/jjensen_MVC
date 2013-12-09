@@ -18,8 +18,8 @@ public class GameFrame extends JFrame {
     public GameFrame() {
 
         tabbedPane = new JTabbedPane();
-        tabbedPane.add("Setup", new SetupPanel(game));
-        tabbedPane.add("Play", new GamePlayPanel(game));
+        tabbedPane.add("Setup", new SetupPanel());
+        tabbedPane.add("Play", new GamePlayPanel());
 
         this.setContentPane(tabbedPane);
 
